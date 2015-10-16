@@ -338,103 +338,151 @@ proc parseRIS*(ris : string): RISCitation =
         of "A4":
             citation.subsidiaryAuthors.add(i[1])
         of "AB":
-            citation.abstract = i[1]
+            if isNil(citation.abstract):
+                citation.abstract = i[1]
         of "AD":
-            citation.authorAddress = i[1]
+            if isNil(citation.authorAddress):
+                citation.authorAddress = i[1]
         of "AN":
-            citation.accessionNumber = i[1]
+            if isNil(citation.accessionNumber):
+                citation.accessionNumber = i[1]
         of "C1":
-            citation.custom1 = i[1]
+            if isNil(citation.custom1):
+                citation.custom1 = i[1]
         of "C2":
-            citation.custom2 = i[1]
+            if isNil(citation.custom2):
+                citation.custom2 = i[1]
         of "C3":
-            citation.custom3 = i[1]
+            if isNil(citation.custom3):
+                citation.custom3 = i[1]
         of "C4":
-            citation.custom4 = i[1]
+            if isNil(citation.custom4):
+                citation.custom4 = i[1]
         of "C5":
-            citation.custom5 = i[1]
+            if isNil(citation.custom5):
+                citation.custom5 = i[1]
         of "C6":
-            citation.custom6 = i[1]
+            if isNil(citation.custom6):
+                citation.custom6 = i[1]
         of "C7":
-            citation.custom7 = i[1]
+            if isNil(citation.custom7):
+                citation.custom7 = i[1]
         of "C8":
-            citation.custom8 = i[1]
+            if isNil(citation.custom8):
+                citation.custom8 = i[1]
         of "CA":
-            citation.caption = i[1]
+            if isNil(citation.caption):
+                citation.caption = i[1]
         of "CN":
-            citation.callNumber = i[1]
+            if isNil(citation.callNumber):
+                citation.callNumber = i[1]
         of "CY":
-            citation.placePublished = i[1]
+            if isNil(citation.placePublished):
+                citation.placePublished = i[1]
         of "DA":
-            citation.date = i[1]
+            if isNil(citation.date):
+                citation.date = i[1]
         of "DB":
-            citation.databaseName = i[1]
+            if isNil(citation.databaseName):
+                citation.databaseName = i[1]
         of "DO":
-            citation.doi = i[1]
+            if isNil(citation.doi):
+                citation.doi = i[1]
         of "DP":
-            citation.databaseProvider = i[1]
+            if isNil(citation.databaseProvider):
+                citation.databaseProvider = i[1]
         of "EP":
-            citation.endPage = i[1]
+            if isNil(citation.endPage):
+                citation.endPage = i[1]
         of "ET":
-            citation.edition = i[1]
+            if isNil(citation.edition):
+                citation.edition = i[1]
         of "IS":
-            citation.number = i[1]
+            if isNil(citation.number):
+                citation.number = i[1]
         of "J2":
-            citation.alternateTitle = i[1]
+            if isNil(citation.alternateTitle):
+                citation.alternateTitle = i[1]
         of "KW":
             citation.keywords.add(i[1])
         of "L1":
-            citation.fileAttachments = i[1]
+            if isNil(citation.fileAttachments):
+                citation.fileAttachments = i[1]
         of "L4":
-            citation.figure = i[1]
+            if isNil(citation.figure):
+                citation.figure = i[1]
         of "LA":
-            citation.language = i[1]
+            if isNil(citation.language):
+                citation.language = i[1]
         of "LB":
-            citation.label = i[1]
+            if isNil(citation.label):
+                citation.label = i[1]
         of "M3":
-            citation.workType = i[1]
+            if isNil(citation.workType):
+                citation.workType = i[1]
         of "N1":
-            citation.notes = i[1]
+            if isNil(citation.notes):
+                citation.notes = i[1]
         of "NV":
-            citation.numberOfVolumes = i[1]
+            if isNil(citation.numberOfVolumes):
+                citation.numberOfVolumes = i[1]
         of "OP":
-            citation.originalPublication = i[1]
+            if isNil(citation.originalPublication):
+                citation.originalPublication = i[1]
         of "PB":
-            citation.publisher = i[1]
+            if isNil(citation.publisher):
+                citation.publisher = i[1]
         of "PY":
-            citation.year = i[1]
+            if isNil(citation.year):
+                citation.year = i[1]
         of "RI":
-            citation.reviewedItem = i[1]
+            if isNil(citation.reviewedItem):
+                citation.reviewedItem = i[1]
         of "RN":
-            citation.researchNotes = i[1]
+            if isNil(citation.researchNotes):
+                citation.researchNotes = i[1]
         of "RP":
-            citation.reprintEdition = i[1]
+            if isNil(citation.reprintEdition):
+                citation.reprintEdition = i[1]
         of "SE":
-            citation.section = i[1]
+            if isNil(citation.section):
+                citation.section = i[1]
         of "SN":
-            citation.isbn = i[1]
+            if isNil(citation.isbn):
+                citation.isbn = i[1]
         of "SP":
-            citation.startPage = i[1]
+            if isNil(citation.startPage):
+                citation.startPage = i[1]
         of "ST":
-            citation.shortTitle = i[1]
+            if isNil(citation.shortTitle):
+                citation.shortTitle = i[1]
         of "T1":
-            citation.primaryTitle = i[1]
+            if isNil(citation.primaryTitle):
+                citation.primaryTitle = i[1]
         of "T2":
-            citation.secondaryTitle = i[1]
+            if isNil(citation.secondaryTitle):
+                citation.secondaryTitle = i[1]
         of "T3":
-            citation.tertiaryTitle = i[1]
+            if isNil(citation.tertiaryTitle):
+                citation.tertiaryTitle = i[1]
         of "TA":
-            citation.translatedAuthor = i[1]
+            if isNil(citation.translatedAuthor):
+                citation.translatedAuthor = i[1]
         of "TI":
-            citation.title = i[1]
+            if isNil(citation.title):
+                citation.title = i[1]
         of "TT":
-            citation.translatedTitle = i[1]
+            if isNil(citation.translatedTitle):
+                citation.translatedTitle = i[1]
         of "UR":
-            citation.url = i[1]
+            if isNil(citation.url):
+                citation.url = i[1]
         of "VL":
-            citation.volume = i[1]
+            if isNil(citation.volume):
+                citation.volume = i[1]
         of "Y2":
-            citation.accessDate = i[1]
+            if isNil(citation.accessDate):
+                citation.accessDate = i[1]
         of "ER":
             break
         else:
@@ -451,20 +499,3 @@ proc parseRIS*(ris : File): RISCitation =
     
     return parseRIS(fileContents)
 
-
-when isMainModule:
-    var s : string = """
-TY  - ELEC
-AU  - Shannon,Claude E.
-PY  - 1948/07//
-TI  - A Mathematical Theory of Communication
-JO  - Bell System Technical Journal
-SP  - 379
-EP  - 423
-VL  - 27
-ER  - """
-    var citation : RISCitation = parseRIS(s)
-    echo(citation.authors)
-    echo(citation.unknownTags)
-    echo(citation.title)
-    echo(citation.referenceType)

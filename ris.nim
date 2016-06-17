@@ -4,7 +4,7 @@
 # Released under the MIT open source license.
 
 
-## ris is a Nim module for parsing Research Information Systems citation files.
+## nim-ris is a Nim module for parsing Research Information Systems citation files.
 ##
 ## For the use of the example, assume there is a file named "citation.ris" containing the following text:
 ##
